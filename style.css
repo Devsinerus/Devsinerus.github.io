@@ -1,11 +1,12 @@
 
+
 body {
 	margin: 0 auto;
 	height: 100%;
+	position: relative;
 }
 
-header {
-}
+
 
 .top_menu {
 	background-color: #232323;
@@ -13,13 +14,8 @@ header {
 	max-height: 50px;
 	text-align: center;
 }
-/*
-menu {
-	width: 300px;
-	height: 500px;
-	background-color: black;
-}
-*/
+
+
 .top_menu li {
 	display: inline-block;
 	font-size: 28px;
@@ -29,7 +25,7 @@ menu {
 
 .image_content {
 	background-color: #444242;
-	height: 1000px;
+	height: 1200px;
 	width: 100%;
 	margin: 5px 0 5px 0;
 	
@@ -49,24 +45,37 @@ menu {
 	width: 80%;
 	height: 100%;
 	margin: 0 auto;
+	position: relative;
 }
 
 .image_block {
 	float: left;
 	width: 20%;
 	height: 150px;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.image_block:hover {
+	-webkit-transform: scale(1.2);
+	 -ms-transform: scale(1.2);
+	 -moz-transform: scale(1.2);
+	 transform: scale(1.2);
 }
 
 .str {
-	background-color: black;
 	width: 100%;
-	vertical-align: bottom;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
 }
 
 .image_blocks a {
-	display: block;
+	display: inline-block;
+	padding: 20px;
+	font-size: 30px;
 	
 }
+
 
 a {
 	color: white;
@@ -76,18 +85,13 @@ a {
 }
 
 menu {
-	background-color: #232323;
-	position: absolute;
-	height: 710px;
-	width: 200px;
 	padding-left: 0;
-	border-radius: 5px;
-	opacity: 0;
+	position: fixed;
+	width: 10%
 }
 
 menu li {
 	display: block;
-	text-align: center;
-	font-size: 25px;
-	padding-top: 20px;
+	font-size: 20px;
+	padding: 15px;
 }
