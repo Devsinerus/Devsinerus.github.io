@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+		<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+		<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+		<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+		<link rel="stylesheet" href="style.css" href="fonts\wiguru1.ttf" type="text/css">
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+		<header>
+			<nav class="top_menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">О сайте</a></li>
+				<li><a href="chat.html">Чат</a></li>
+			</nav>
+		</header>
+		<content>
+			
+			
+			<div class="image_content">
+				<menu>
+					<li><a href="https://devsinerus.github.io">Популярные</a></li>
+					<li><a href="#">JOJO</a></li>
+					<li><a href="#">Cохраненные</a></li>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О сайте</a></li>
+					<li><a href="#">Чат</a></li>
+				</menu>
+				<div class="image_blocks">
+					<div id="html-chat"></div>
+					<div class="str">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</div>		
+				</div>
+			</div>
+		</content>
+		<footer>
+			<div class="contact">
+				vasilev.vanya@mail.ru <br>
+				VK - vk.com/sinerus01
+			</div>
+		</footer>
+
+		<script>
+ 
+		   /**
+		    * Чат работает на comet-server.ru
+		    * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+		    */
+		    $(document).ready(function()
+		    {
+		       // Запуск api комет сервера
+		       CometServer().start({dev_id: 15 }) // Идентификатор разработчика на comet-server.ru
+		 
+		       // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+		       htmljs_Chat_Init( $("#html-chat") )
+		    });
+		</script>
+	</body>
+
+</html>
