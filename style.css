@@ -96,8 +96,3 @@ menu li {
 	padding: 15px;
 }
 
-@media (max-height: 500px) {
-	menu li{
-		font-size: 14px;
-	}	
-}
